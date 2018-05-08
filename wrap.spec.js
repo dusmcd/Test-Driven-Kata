@@ -16,7 +16,7 @@ describe('wrap', () => {
   it('line breaks at specific points', () => {
     const result = wrap(testStr, 20);
     expect(result.indexOf('\n')).to.equal(17);
-    expect(result.indexOf('\n', 18)).to.equal(39);
+    expect(result.indexOf('\n', 18)).to.equal(38);
   });
   it('does not change the amount of words', () => {
     const wordLength = testStr.split(' ').length;
