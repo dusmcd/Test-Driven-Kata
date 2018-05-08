@@ -20,6 +20,6 @@ describe('wrap', () => {
   });
   it('does not change the amount of words', () => {
     const wordLength = testStr.split(' ').length;
-    expect(wrap(testStr, 20).split(' ').length).to.equal(wordLength);
+    expect(wrap(testStr, 20).split(' ').length).to.equal(13);
   });
 });
